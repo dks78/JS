@@ -1,0 +1,223 @@
+avec JS on peux gloanelment fair tout , FRONT COMEM BACK 
+
+on peux fair des application front avec des effetds dynamique , c'est devenu telment populaire !
+Il y a beaucoup d'entreprise qui l'utilise,
+Le code html peux s'ecrire daans le html 
+type scrip est obligatoir avc angular
+
+Javais Script et trés permitif en cas de bug il ne va pas forcement t'aider
+
+Nome ses variable est hyper important pour s'y retrouve 
+
+LES VARIABLES:
+ On peux a
+
+<script>
+     alert('bonjour Michel'); 'bonjour michel'// permets de creé une alerte ! 'Message d'erreur'
+     console.log("bonjours"); // permet d'affichez un message dans la cosol log du navigateur (" inspecter 
+     // console")
+     var isTrue = true;
+console.log(typeof isTrue); // boolean
+
+var userAge = 30;
+console.log(typeof userAge); // number
+
+var userName = "Mitch";
+console.log(typeof userName); // string
+
+var empty;
+console.log(typeof empty); // undefined
+
+var nullVar = null;
+console.log(typeof nullVar); // object ...oui
+
+var sayMyName = function () {
+    console.log("My name is Bob!");
+   };
+   console.log(typeof sayMyName); // function
+   
+   var userCar = {
+    model: "BMW",
+    year: "2000",
+   };
+   console.log(typeof userCar); // object
+   
+   var fruits = ["apple", "banana", "kiwi"];
+   console.log(typeof fruits); // object
+
+   let userName = "Mamadou ";
+   let userName = "cyprien";
+   console.log(userName);
+
+   let message = "hello";
+let message2 = 'test';
+let message22 = 'Je m\'appelle Mitch';
+let message3 = `bonjour${message2}`;    
+
+const myName = "marone";
+
+ console.log(`my Name is ${myName}`);
+
+
+ let addition = 1 + 1;
+let soustraction = 1 - 1;
+let multiplication = 1 * 2;
+let division = 1 / 2;
+let modulo = 6 % 2;
+let priority = (6 - 2) / 2;
+
+
+
+
+let myBudget = 0;
+myBudget++;
+
+console.log(myBudget); // affiche 1
+myBudget += 2;
+
+console.log(myBudget); // affiche 3
+myBudget = myBudget + 1;
+
+console.log(myBudget); // affiche 4
+myBudget--;
+
+console.log(myBudget); // affiche 3
+myBudget -= 2;
+
+console.log(myBudget); // affiche 1
+myBudget = myBudget - 1;
+
+console.log(myBudget); // affiche 
+
+
+
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(''));
+
+console.log(0 == false);
+
+/* Il y a 5 valeurs “falsy” :
+0
+“”
+undefined
+null
+NaN
+Le reste est vrai. “truthy” */
+const hasDriverLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriverLicense && hasGoodVision); // false
+console.log(hasDriverLicense || hasGoodVision); // true
+
+console.log(!hasDriverLicense); // false
+console.log(!hasGoodVision); // true
+
+
+
+const name = "Paul";
+
+if (name === "Paul") {
+ console.log("Welcome, Paul");
+} else {
+ console.log("Go away!");
+}
+
+
+
+// const myName = prompt("Wath is your name");
+// console.log(`${myName}`);
+
+
+
+const nameUser = prompt("Wath's your username");
+
+if (nameUser === 'paul'|| nameUser === 'ringo' || nameUser === 'john') {
+    console.log("conecter");
+    const passwordUser = prompt("Password");
+    if (
+        (nameUser === "paul" && passwordUser === 'paul456')||
+        (nameUser === 'john' && passwordUser === 'john145')|| 
+        (nameUser === 'ringo' && passwordUser === 'ringo753' ) 
+    ){
+        console.log("password correct");
+    } else {
+        console.log("password incorrect");
+    }
+} else {
+    console.log("Error userName incorrect");
+}
+// Consigne initiale :
+// Faire un prompt pour demander le nom de l’utilisateur
+// Les utilisateurs qui peuvent se connecter : “Paul”, “Ringo”, “John”. (Sans se soucier des majuscules, donc “paul” est OK)
+// Ecrire dans la console “Wrong username” si aucun de ces noms.
+// Faire ensuite un prompt pour demander le mot de passe
+// Les mots de passes :
+// Paul => Paul1234
+// Ringo => Ringo458
+// John => John692
+// Si le mot de passe est bon, il faut faire un message de bienvenu personnalisé (averc son nom). Sinon écrire dans la console “Wrong password”.
+// Essayer de faire du DRY code. Aide : est-ce que c’est simple d’ajouter un utilisateur et un mot de passe à mon programme ?
+
+// A_Coercion
+console.log('I am ' + 23 + ' years old'); // I am 23 years old
+console.log('23' + 10 + 5); // "23105"
+console.log(23 + '10' + 5); // "23105"
+console.log(23 - '10' + 5); // 18
+console.log(23 + '10' - 5); // ?????
+
+// Portée (scope) / Contexte
+let name1 = "Pierre";
+if (name1 === "Pierre") {
+   const city = "New York";
+   if (city === "New York") {
+       console.log("Welcome " + name1 + " in " + city);
+   } else {
+       console.log("Welcome " + name1);
+   }
+   /// fonctionne correctement à l'intérieur du contexte de la condition
+} else {
+  console.log(name)
+  /// tu verras s'afficher Pierre
+  console.log(city)
+  /// tu verras une error 'reference error: city is not defined'
+}   
+/* En Javascript, le contexte est très important : on ne peut pas utiliser une variable déclarée à l’intérieur d’une condition en dehors de cette dernière.
+Essayer avec var à la place de const. Il n’y a pas d’erreur. Seulement undefined. */
+// Déclaration de fonction
+function multiply1(value1, value2) {
+ return value1 * value2;
+}
+const result1 = multiply1(2, 10);
+
+// Expression de fonction
+const multiply2 = function (value1, value2) {
+ return value1 * value2;
+}
+const result2 = multiply2(3, 5);
+
+console.log(result1, result2);
+
+
+
+//  ici j'ai demande a l'utilisateur d'entre un code secret , si le code secret et = a "seret la consol affiche connecter 
+// sinon byby"
+const secretCode = prompt("What's your password?");
+console.log(secretCode);
+
+if (secretCode === "secret"){
+    console.log("conecter");
+} else {
+    console.log("password error");
+} 
+
+
+//
+//Les chaînes de caractères en Javascript sont comme des tableaux (que nous verrons plus tard). 
+//Javascript nous met à disposition des méthodes permettant de manipuler simplement une chaîne de caractère.
+//
+let mesage = "bonjour";
+let mesageLength = mesage.length;
+console.log(mesageLength); // 7
+</script>

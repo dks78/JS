@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>My website</h1>
-    <script src="script.js"></script>
-<script>
 
-</script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texte Automatique</title>
+</head>
+
+<body>
+
+<script src="chal4.js"></script>
+  <!-- <script>
+    const texte = "Le texte apparaît et disparaît lettre par lettre !";
+    let index = 0;
+    let direction = 1; // 1 pour afficher, -1 pour masquer
+    // Fonction pour afficher ou masquer le texte lettre par lettre
+    function afficherOuMasquerLettre() {
+      const textContainer = document.getElementById("textContainer");
+      const lettreActuelle = texte.charAt(index);
+      if (direction === 1) {
+        textContainer.textContent += lettreActuelle;
+        index++;  
+        if (index === texte.length) {
+          direction = -1;
+          setTimeout(afficherOuMasquerLettre, 2000); // Pause avant de masquer
+        } else {
+          setTimeout(afficherOuMasquerLettre, 50); // Temporisation entre les lettres
+        }
+      } else {
+        textContainer.textContent = texte.substring(0, index);
+        index--;
+        if (index === 0) {
+          direction = 1;
+          setTimeout(afficherOuMasquerLettre, 1000); // Pause avant de réafficher
+        } else {
+          setTimeout(afficherOuMasquerLettre, 50); // Temporisation entre les lettres
+        }
+      }
+    }
+    // Appeler la fonction pour démarrer le cycle
+    afficherOuMasquerLettre(); -->
+  </script>
+</body>
 </html>
