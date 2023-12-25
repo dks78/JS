@@ -25,7 +25,6 @@ function checkWinner () {
     let matchScoreOThreeKoalas = 49;
     let MoyenneScoreTotalKoalas = (matchScoreOneKoalas + matchScoreTwoKoalas + matchScoreOThreeKoalas) / 3;
     let MoyenScoreTotalDauphin = (matchScoreOneDauphin + matchScoreThreeDauphin + matchScoreTwoDauphin) / 3;
-
     let CompMoyenKoalas = MoyenneScoreTotalKoalas;
     let CompMoyenDauphin = MoyenScoreTotalDauphin;   
     if (CompMoyenKoalas > CompMoyenDauphin) {

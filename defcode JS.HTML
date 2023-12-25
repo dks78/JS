@@ -220,4 +220,56 @@ if (secretCode === "secret"){
 let mesage = "bonjour";
 let mesageLength = mesage.length;
 console.log(mesageLength); // 7
+
+
+
+const animals = ["😺", "🐶","🐭", "🦊", "🐻", "🐼"];
+
+for ( let i = 0; i < animals.length; i++){
+    console.log(animals[i]);
+}
+
+// let i = 0 est une variable appeler itérateur , que nous devons creé t fixer a une valeur ( ici on part de 0 )
+// cette variable sera notre compteur
+
+// i < 5 est une condition que nous voulons verifier avant chaque tour de boucle , (itération )
+
+// i++ est l'increment , sela sera executé a la fin de chaque boucle et généralement , nous ajoutons un à la fin de chaque boucle 
+
+// nous avons definit la variable i , qui est fixé a 0 
+// ensuite nous voulons que les INSTRUCTION DE LA BOUCLE  , sois répéter jusqu'a la condition i < 5 donc 5 fois 
+
+
+
+let i = 10;
+
+while (i >= -100 ) {
+    console.log(`turn number ${i}`);
+    i--
+} // boucle de décrémentation :) 
+
+
+
+
+
+
+
+
+
+let sum = 0;
+
+for ( let i = 0 ; i < 10 ; i++){
+    const name = 'mathis'
+    console.log(name + "save" + sum + "StarWars movies.");
+    sum ++;
+}
+// Par exemple, dans ce cas, la variable name sera disponible uniquement dans le contexte de la boucle (à l’intérieur des accolades {}) et elle ne sera pas disponible en dehors.
+
+// La variable sum est disponible dans toute la boucle et en dehors, car elle a été créée en dehors du contexte de la boucle.
+
+// Si tu crées une variable à l’intérieur d’accolades {}, cette variable sera disponible uniquement à l’intérieur de ces accolades.
+
+// Sachant cela maintenant, nous devrions être capables de créer des boucles qui fonctionnent pour nos projets en tenant compte du contexte.
+
+// Une vidéo géniale à propos du scope:
 </script>

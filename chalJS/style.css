@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: roboto, sans-serif;
+  }
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background-color: coral;
+    height: 100px;
+    width: 100%;
+  }
+  .cards {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    border-radius: 10px;
+    width: 200px;
+    margin: 20px;
+  }

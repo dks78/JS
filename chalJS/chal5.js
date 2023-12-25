@@ -22,15 +22,15 @@
 //     ? `Le pourboire est de ${remise}% de la note.`
 //     : "La note totale n'est pas dans la plage spécifiée.";
 
-// console.log(message);
+console.log(message);
 function calculerRemise(NoteTotal) {
     if (NoteTotal >= 50 && NoteTotal <= 300) {
-        var pourcentage = 0.15;
-        var remise = NoteTotal * pourcentage;
+        let pourcentage = 0.15;
+        let remise = NoteTotal * pourcentage;
         console.log("Le pourboire est de 15% de la note : " + remise);
     } else if (NoteTotal < 50 || NoteTotal > 300) {
-        var pourcentageDeux = 0.20;
-        var remiseDeux = NoteTotal * pourcentageDeux;
+        let  pourcentageDeux = 0.20;
+        let remiseDeux = NoteTotal * pourcentageDeux;
         console.log("Le pourboire est de 20% de la note : " + remiseDeux);
     } else {
         console.log("La note totale n'est pas dans la plage spécifiée.");
