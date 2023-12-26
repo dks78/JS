@@ -13,7 +13,7 @@ function calcTip (blis){
     return remiseTotaleDeux
     }
 }
-calcTip(125);
+
 let tips = [];
 
 tips.push(calcTip(125));
